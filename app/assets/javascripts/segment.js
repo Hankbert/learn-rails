@@ -81,7 +81,8 @@ analytics.load("Lr9NzwUK8MWAJirbXNswhojdeI3mlbLr");
 })();
 
 // accommodate Turbolinks
-// track page views and form submissions $(document).on('turbolinks:load', function() {
+// track page views and form submissions
+$(document).on('turbolinks:load', function() {
   console.log('page loaded');
   analytics.page();
   analytics.trackForm($('#new_visitor'), 'Signed Up');
